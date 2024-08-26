@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrar y Descifrar Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/alura.png" alt="Logo" class="logo">
+        <h1 class="titulo">Cifrar y Descifrar Texto</h1>
+    </header>
+    <div class="container">
+        <div class="texto">
+            <label for="text-input">Ingrese el texto:</label>
+            <textarea id="text-input" name="text-input" placeholder="Escribe aquí..."></textarea>
+            
+            <div class="validation-message-container">
+                <p id="validation-message" class="mensaje-encriptado"></p>
+            </div>
+            
+            <div class="botones">
+                <button id="encrypt-btn" class="btn-encriptar">Cifrar</button>
+                <button id="decrypt-btn" class="btn-desencriptar">Descifrar</button>
+            </div>
+        </div>
+
+        <div class="encriptado">
+            <textarea id="result" class="mensaje-encriptado" placeholder="  Encripta Algo"readonly></textarea>
+
+            <div class="copy-btn-container">
+                <button id="copy-btn">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Carmen Hernández. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
